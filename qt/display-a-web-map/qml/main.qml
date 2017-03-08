@@ -25,17 +25,6 @@ ApplicationWindow {
         wrapAroundMode: Enums.WrapAroundModeEnabledWhenSupported
         Map {
             initUrl: "https://www.arcgis.com/sharing/rest/content/items/" + itemId + "/data"
-            initialViewpoint: viewpoint
         }
-    }
-
-    ViewpointCenter {
-        id: viewpoint
-        center: Point {
-            x: -118.24368
-            y: 34.05293
-            spatialReference: SpatialReference { wkid: 3857 }
-        }
-        targetScale: 15000
     }
 }
